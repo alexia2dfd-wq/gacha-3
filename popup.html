@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 220px;
+      padding: 18px 16px 16px;
+      font-family: 'Segoe UI', sans-serif;
+      background: #120020;
+      color: #ff75ed;
+      text-align: center;
+    }
+    h2 {
+      font-size: 15px;
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1.5px solid #ff75ed;
+      background: transparent;
+      color: #ff75ed;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      transition: background 0.15s;
+    }
+    button:hover:not(:disabled) { background: #ff75ed22; }
+    button:disabled { opacity: 0.4; cursor: not-allowed; }
+    #status {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #cc99d5;
+      min-height: 16px;
+      line-height: 1.5;
+    }
+    .pity-section {
+      margin-top: 12px;
+      border-top: 1px solid #ff75ed44;
+      padding-top: 10px;
+    }
+    .pity-label {
+      font-size: 10px;
+      color: #ff75ed99;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .pity-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 4px 0;
+      font-size: 11px;
+    }
+    .pity-name { color: #cc99d5; }
+    .pity-bar-wrap {
+      flex: 1;
+      margin: 0 8px;
+      height: 4px;
+      background: #ff75ed22;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .pity-bar {
+      height: 100%;
+      background: #ff75ed;
+      border-radius: 2px;
+      transition: width 0.3s;
+    }
+    .pity-count { color: #ff75ed; font-size: 10px; min-width: 32px; text-align: right; }
+  </style>
+</head>
+<body>
+  <h2>🎀 Bratty Alexia~</h2>
+  <button id="pull1">✦ 1 Pull</button>
+  <button id="pull10">✦ 10 Pulls</button>
+  <div id="status">Tap to tempt fate~</div>
+  <div class="pity-section">
+    <div class="pity-label">Pity</div>
+    <div class="pity-row">
+      <span class="pity-name">rare</span>
+      <div class="pity-bar-wrap"><div class="pity-bar" id="bar8pct" style="width:0%"></div></div>
+      <span class="pity-count" id="count8pct">0/10</span>
+    </div>
+    <div class="pity-row">
+      <span class="pity-name">reap</span>
+      <div class="pity-bar-wrap"><div class="pity-bar" id="barReap" style="width:0%"></div></div>
+      <span class="pity-count" id="countReap">0/80</span>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
