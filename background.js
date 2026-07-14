@@ -4,6 +4,23 @@ let pullsRemaining = 0;
 let activeTabId = null;
 let pityCounters = { pullsSince8pct: 0, pullsSinceSoulReap: 0 };
 
+// local storage for more reliability (plz check :3)
+chrome.storage.local.get(['session'], (result) => {
+  if (result.session && result.session.pullsRemaining > 0) {
+    pullsRemaining = result.session.pullsRemaining;
+    activeTabId = result.session.activeTabId;
+    pityCounters = result.session.pityCounters || pityCounters;
+    console.log('Restored session:', pullsRemaining, 'pulls remaining');
+  }
+});
+
+// saving to local storage (plz check :3)
+function saveSession() {
+  chrome.storage.local.set({
+    session: { pullsRemaining, activeTabId, pityCounters }
+  });
+}
+
 // Send a message to the content script, retrying if it isn't ready yet
 function trySendMessage(tabId, msg, retries = 6) {
   chrome.tabs.sendMessage(tabId, msg, () => {
