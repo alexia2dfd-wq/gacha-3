@@ -51,12 +51,7 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   if (msg.action === 'pullComplete') {
     pullsRemaining--;
     console.log(`Pull complete. ${pullsRemaining} remaining.`);
-    if (pullsRemaining > 0 && activeTabId !== null) {
-      // Wait a moment for the payment to settle, then navigate back for the next pull
-      setTimeout(() => {
-        chrome.tabs.update(activeTabId, { url: 'https://throne.com/brattyalexia' });
-      }, 3000);
-    } else {
+    if (pullsRemaining < 1) {
       activeTabId = null;
       console.log('All pulls done!');
     }
