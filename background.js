@@ -48,6 +48,7 @@ chrome.tabs.onRemoved.addListener((tabId) => {
     console.log('Active pull tab closed — resetting.');
     pullsRemaining = 0;
     activeTabId = null;
+    chrome.storage.local.remove('session');
   }
 });
 
@@ -60,6 +61,7 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     pullsRemaining = msg.count;
     chrome.tabs.create({ url: 'https://throne.com/brattyalexia' }, (tab) => {
       activeTabId = tab.id;
+      saveSession();
     });
     sendResponse({ ok: true });
     return true;
@@ -70,7 +72,10 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     console.log(`Pull complete. ${pullsRemaining} remaining.`);
     if (pullsRemaining < 1) {
       activeTabId = null;
+      chrome.storage.local.remove('session');
       console.log('All pulls done!');
+    } else {
+      saveSession();
     }
     sendResponse({ ok: true });
     return true;
@@ -78,6 +83,7 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
 
   if (msg.action === 'updatePity') {
     pityCounters = { pullsSince8pct: msg.pullsSince8pct, pullsSinceSoulReap: msg.pullsSinceSoulReap };
+    saveSession()
     sendResponse({ ok: true });
     return true;
   }
