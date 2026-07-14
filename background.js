@@ -5,20 +5,25 @@ let activeTabId = null;
 let pityCounters = { pullsSince8pct: 0, pullsSinceSoulReap: 0 };
 
 // local storage for more reliability (plz check :3)
-chrome.storage.local.get(['session'], (result) => {
+chrome.storage.local.get(['session', 'pityCounters'], (result) => {
   if (result.session && result.session.pullsRemaining > 0) {
     pullsRemaining = result.session.pullsRemaining;
     activeTabId = result.session.activeTabId;
-    pityCounters = result.session.pityCounters || pityCounters;
-    console.log('Restored session:', pullsRemaining, 'pulls remaining');
+  }
+  if (result.pityCounters) {
+    pityCounters = result.pityCounters;
   }
 });
 
 // saving to local storage (plz check :3)
 function saveSession() {
   chrome.storage.local.set({
-    session: { pullsRemaining, activeTabId, pityCounters }
+    session: { pullsRemaining, activeTabId }
   });
+}
+
+function savePityCounters() {
+  chrome.storage.local.set({ pityCounters });
 }
 
 // Send a message to the content script, retrying if it isn't ready yet
@@ -83,7 +88,7 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
 
   if (msg.action === 'updatePity') {
     pityCounters = { pullsSince8pct: msg.pullsSince8pct, pullsSinceSoulReap: msg.pullsSinceSoulReap };
-    saveSession()
+    savePityCounters();
     sendResponse({ ok: true });
     return true;
   }
