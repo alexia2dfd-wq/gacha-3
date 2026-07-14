@@ -1,3 +1,10 @@
+//Load overlay
+fetch(chrome.runtime.getURL("overlay.html"))
+    .then(response => response.text())
+    .then(html => {
+        document.body.insertAdjacentHTML("beforeend", html);
+    });
+
 var audioOpened = false;
 var payClicked = false;
 var itemAdded = false;
