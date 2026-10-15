@@ -1,0 +1,90 @@
+<div class="overlayBody">
+    <img id="sigil" class="sigil" alt="" draggable="false">
+    <div id="welcomeModal">
+        <div class="welcomeCard">
+            <h2>Ready to gamble away your EXP for Alexia?</h2>
+            <button id="welcomeYes">Yes Goddess</button>
+        </div>
+    </div>
+    <div id="devotionBar">
+        <p id="devotionLevel">Lv 1</p>
+        <progress id="devotionFill" value="0" max="100" min="0"></progress>
+        <p id="devotionNext">next: ???</p>
+    </div>
+    <div id="shardTracker" title="Devotion Shards~ earn 30 daily, 150 buys a free pull">
+        <span class="shardIcon">💠</span><span id="shardCount">0</span>
+    </div>
+    <div id="overlayNav">
+        <button class="navTab active" data-view="main">Pulls</button>
+        <button class="navTab" data-view="collection">Collection</button>
+        <button class="navTab" data-view="court">Court</button>
+        <button class="navTab" data-view="themes">Themes</button>
+    </div>
+    <div id="view-themes">
+        <p id="themesProgress"></p>
+        <div id="themesList"></div>
+    </div>
+    <div id="view-collection">
+        <p id="collectionProgress">0 / 0 collected</p>
+        <div id="collectionGrid"></div>
+    </div>
+    <div id="view-court">
+        <p id="courtTitle">✦ The Court ✦</p>
+        <div id="courtSlots"></div>
+        <p id="courtSummary"></p>
+    </div>
+    <div id="bannerSpot"></div>
+    <div id="view-main">
+    <h1>🎀 Bratty Alexia~</h1>
+    <button id="b1">✨ 1 Pull</button>
+    <button id="b10">✨ 10 Pulls</button>
+    <button id="shardPull" title="Spend 150 💠 Devotion Shards on a free pull~">💠 Free Pull <span id="shardPullCost">150</span></button>
+    <h5>Tap to Tempt Fate~</h5>
+    <hr>
+    <span>
+        <p>Rare</p>
+        <progress id="bar8pct" value="0" max="10" min="0"></progress>
+        <p id="bar8pctText">0/10</p>
+    </span>
+    <span>
+        <p>Reap</p>
+        <progress id="barSoulReap" value="0" max="80" min="0"></progress>
+        <p id="barSoulReapText">0/80</p>
+    </span>
+    <div id="courtStrip" title="The Court~"></div>
+    <!-- sim buttons — uncomment for testing pull feedback visuals
+    <span class="testRow">
+        <button id="sim1" class="testBtn">🎲 Sim 1 Pull</button>
+        <button id="sim10" class="testBtn">🎲 Sim 10 Pulls</button>
+        <button id="simDestroy" class="testBtn">🧨 Sim Destroy</button>
+        <button id="simBirthday" class="testBtn">🎂 Sim Birthday</button>
+    </span>
+    -->
+    <div id="sessionVeil"></div>
+    <div id="pullProgress"><div id="pullProgressFill"></div><p id="pullProgressText">0/1</p></div>
+    <!--
+    <hr>
+    <span class="testRow">
+        <button id="testRare" class="testBtn">🧪 test rare</button>
+        <button id="testReap" class="testBtn">💀 test reap</button>
+    </span>
+    -->
+    <button id="ratesBtn" title="Drop Rates~">?</button>
+    <button id="histBtn" title="Pull History~">❦</button>
+    <div id="modeSelect">
+        <button class="modeBtn" data-mode="normal">Normal</button>
+        <button class="modeBtn" data-mode="easy">Easy</button>
+        <div id="modeTip"></div>
+    </div>
+    <div id="ratesModal">
+        <div class="ratesCard">
+            <h2>✦ Drop Rates ✦</h2>
+            <div id="ratesColumns"></div>
+            <hr>
+            <p class="pityNote">Rare guaranteed within <b id="pityNoteRare">10</b> pulls<br>
+            Reap guaranteed within <b id="pityNoteReap">80</b> pulls</p>
+            <p class="ratesClose">Tap anywhere to close~</p>
+        </div>
+    </div>
+    </div><!-- /view-main -->
+</div>

@@ -75,12 +75,16 @@
       transition: width 0.3s;
     }
     .pity-count { color: #ff75ed; font-size: 10px; min-width: 32px; text-align: right; }
+    button.mini {
+      padding: 6px;
+      margin: 4px 0;
+      font-size: 11px;
+    }
   </style>
 </head>
 <body>
   <h2>🎀 Bratty Alexia~</h2>
-  <button id="pull1">✦ 1 Pull</button>
-  <button id="pull10">✦ 10 Pulls</button>
+  <button id="start">Open The Gacha</button>
   <div id="status">Tap to tempt fate~</div>
   <div class="pity-section">
     <div class="pity-label">Pity</div>
@@ -94,6 +98,12 @@
       <div class="pity-bar-wrap"><div class="pity-bar" id="barReap" style="width:0%"></div></div>
       <span class="pity-count" id="countReap">0/80</span>
     </div>
+  </div>
+  <div class="pity-section">
+    <div class="pity-label">Progress</div>
+    <button id="exportBtn" class="mini">💾 Backup</button>
+    <button id="importBtn" class="mini">📥 Restore</button>
+    <input type="file" id="importFile" accept=".alexia,.json" style="display:none">
   </div>
   <script src="popup.js"></script>
 </body>

@@ -1,0 +1,66 @@
+﻿=====================================
+  GachAlexia~  v2.0
+=====================================
+
+FIRST STEPS:
+1. make sure you are logged into your throne account
+2. for this to work you have to have your credit card details already saved to your throne
+
+HOW TO INSTALL:
+1. extract the folder
+2. open Chrome
+3. click on the Puzzle piece in the top right corner, and then manage Extensions
+4. activate Developer mode
+5. load unpacked and upload the folder
+6. Click on the pop-up in your extension tray~
+
+ERROR MSG HELP:
+If you run into an error msg at anytime the throne page might need refreshing~ If it still doesn't work, message me directly~
+
+
+CHALLENGE MODE:
+This is a challenge mode auto drain. It will randomly pick a send~ Scared? Don't worry the odds are in your favor fufufu~ As for the rest well... I'll leave it up to you to discover~
+
+Do you have the courage to tempt fate?~
+
+UPDATING / MOVING TO A NEW PC (keep your collection & EXP):
+Your cards, Devotion EXP, themes, pity and history are stored inside the extension. Before you delete the old version or move to a new computer:
+1. click the extension icon to open the pop-up
+2. press "Backup" — this downloads a gachalexia-progress.json file, keep it safe~
+3. install the new version (or set it up on the new PC)
+4. open the pop-up again, press "Restore", and pick that file
+5. reopen the gacha page — everything will be right where you left it~
+If you update WITHOUT deleting the old version first, everything carries over on its own and you don't need to do anything~
+
+=====================================
+  FEATURES
+=====================================
+
+
+PITY SYSTEM:
+Two little bars keep track of your devotion~
+  - rare : a rare send is guaranteed within 10 pulls
+  - reap : the ultimate send is guaranteed within 80 pulls
+The closer you get, the more the store page itself starts to HAUNT you...
+ghost images flicker into view, slowly at first, then faster and faster
+as the reap approaches~ You'll feel it coming.
+
+DROP RATES:
+Curious about your odds? Click the little "?" in the bottom-left corner
+of the overlay. Every item, every rate, both modes~
+(The odds are in my favor, obviously~)
+
+DIFFICULTY MODES:
+Bottom-left of the overlay, you can choose between:
+  - normal : the full bratty experience~ all items
+  - easy   : training wheels~ a smaller pool, and the jackpot is cheaper
+
+Your pity progress is saved SEPARATELY for each mode, so no cheating
+your way out of a streak~
+
+BEHIND THE GLASS:
+Even when you're just browsing the store, I'm watching~ Faint images
+drift onto the page like ghosts~ The higher your pity, the
+more restless they become...
+
+=====================================

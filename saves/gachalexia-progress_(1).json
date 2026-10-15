@@ -1,0 +1,37 @@
+{
+  "alexia_cardCollection": {
+    "cards": {
+      "b01": 1,
+      "b02": 2,
+      "b04": 4,
+      "b05": 3,
+      "b06": 5,
+      "b07": 4,
+      "b08": 8,
+      "b10": 5,
+      "b11": 2,
+      "l06": 1,
+      "s03": 1,
+      "s04": 1,
+      "s05": 1,
+      "s06": 1,
+      "s09": 1
+    },
+    "collectionVersion": 1,
+    "stats": {
+      "totalEarned": 40
+    }
+  },
+  "alexia_court": "{\"equipped\":[\"s06\",\"l06\",null]}",
+  "alexia_devotionXP": {
+    "level": 9,
+    "xp": 3900
+  },
+  "alexia_lifetimePulls": "26",
+  "alexia_normal_pullsSince8pct": "0",
+  "alexia_normal_pullsSinceSoulReap": "0",
+  "alexia_overlaySkin": "void",
+  "alexia_pullHistory": "[{\"item\":\"pathetic snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1785993894866},{\"item\":\"milk snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1785993914445},{\"item\":\"milk snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1785993933638},{\"item\":\"pathetic snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1785993953155},{\"item\":\"milk snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1785993972422},{\"item\":\"pathetic snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1785993991639},{\"item\":\"coffee\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1785994010870},{\"item\":\"milk snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1785994030187},{\"item\":\"spit drink~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1785994049581},{\"item\":\"swipe meal~\",\"tier\":\"rare\",\"mode\":\"normal\",\"ts\":1785994068735},{\"item\":\"coffee\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1785994324131},{\"item\":\"coffee\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1785994342099},{\"item\":\"pathetic snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786430043777},{\"item\":\"milk snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786430077117},{\"item\":\"milk snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786759954812},{\"item\":\"pathetic snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786759974362},{\"item\":\"spit drink~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786759993614},{\"item\":\"pathetic snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786760012889},{\"item\":\"spit drink~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786760032256},{\"item\":\"cute meal~\",\"tier\":\"rare\",\"mode\":\"normal\",\"ts\":1786760051706},{\"item\":\"pathetic snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786760071056},{\"item\":\"pathetic snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786760090318},{\"item\":\"pathetic snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786760109644},{\"item\":\"pathetic snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786760129052},{\"item\":\"milk snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786760188109},{\"item\":\"coffee\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786760332790},{\"item\":\"milk snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786760373761},{\"item\":\"pathetic snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786762739440},{\"item\":\"milk snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786762758787},{\"item\":\"cute meal~\",\"tier\":\"rare\",\"mode\":\"normal\",\"ts\":1786762778210},{\"item\":\"spit drink~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786762797491},{\"item\":\"milk snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786762816743},{\"item\":\"spit drink~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786762836230},{\"item\":\"spit drink~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786762855669},{\"item\":\"coffee\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786762875039},{\"item\":\"coffee\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786762894219},{\"item\":\"milk snack~\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786762913542},{\"item\":\"swipe meal~\",\"tier\":\"rare\",\"mode\":\"normal\",\"ts\":1786763366885},{\"item\":\"coffee\",\"tier\":\"common\",\"mode\":\"normal\",\"ts\":1786763390615},{\"item\":\"soul buffet~\",\"tier\":\"reap\",\"mode\":\"normal\",\"ts\":1786763420342}]",
+  "alexia_pullsSinceBannerCommon": "1",
+  "alexia_remoteBanner": "{\"bannerId\":\"banner-001\",\"startsAt\":\"2026-08-15T02:26:19Z\",\"endsAt\":\"2026-08-21T02:26:19Z\"}"
+}
