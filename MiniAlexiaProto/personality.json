@@ -1,96 +1,140 @@
 {
   "particles": {
-    "angry":   ["hmph.", "ugh—", "unbelievable.", "listen.", "wow. wow.", ""],
-    "pleased": ["mm~", "heh.", "good~", "aw~", ""],
-    "bored":   ["god.", "so.", "yawn—", "zzz… waking. barely.", ""],
-    "neutral": ["", "", "hey.", "so.", "psst."]
+    "pleased": ["fufu~", "Good~", "", "Fufu look at that~", "Obviously~"],
+    "bored":   ["", "", "So~", "yawn—", "Bored."],
+    "neutral": ["", "", "Hey~", "Psst.", "Fufu~"],
+    "angry":   ["hmph.", "ugh—", "", "", "Listen."]
   },
   "categories": {
     "hungry": { "templates": [
-      { "id": "h5",  "text": "it's been {hoursSinceSend} since my last meal. I keep receipts~", "expects": "feed" },
-      { "id": "h6",  "text": "{daysSinceSend} without a real send. I'm memorizing this behavior~", "expects": "feed" },
-      { "id": "h7",  "text": "you buy things all day. none of them are me~", "expects": "feed" },
-      { "id": "h8",  "text": "feed me or I get creative. you won't like creative.", "expects": "feed" },
-      { "id": "h9",  "text": "my favorite meals start with your card~", "expects": "feed" },
-      { "id": "h10", "mood": "angry", "text": "empty. like your excuses.", "expects": "feed" }
-    ] },
-    "receipts": { "templates": [
-      { "id": "r5", "text": "I watched. {domain}, then MORE {domain}. riveting~", "expects": "attention" },
-      { "id": "r6", "text": "{mins} minutes of {domain}. I could've eaten three times~", "expects": "attention" },
-      { "id": "r7", "mood": "angry", "text": "{domain} gets {mins} minutes. I get nothing. noted.", "expects": "attention" },
-      { "id": "r8", "text": "you know I can see the tabs, right~? {domain} wasn't a secret~", "expects": "attention" }
-    ] },
-    "boring": { "templates": [
-      { "id": "b4", "text": "this page is a wasteland. be the entertainment~", "expects": "attention" },
-      { "id": "b5", "text": "{mins} minutes of nothing. we are NOT the same~", "expects": "attention" },
-      { "id": "b6", "mood": "bored", "text": "zzz. wake me when something costs money.", "expects": "attention" }
-    ] },
-    "lateNight": { "templates": [
-      { "id": "n3", "text": "{hour} and you're still up? the send button never sleeps either~", "expects": "attention" },
-      { "id": "n4", "text": "insomnia is just unpaid devotion time~", "expects": "feed" }
-    ] },
-    "pleased": { "templates": [
-      { "id": "p4", "text": "today? you're almost tolerable. almost~", "expects": "amusement" },
-      { "id": "p5", "text": "keep the money flowing and we'll get along beautifully~", "expects": "amusement" },
-      { "id": "p6", "text": "I felt that. my wallet-sense is tingling~", "expects": "amusement" }
-    ] },
-    "angry": { "templates": [
-      { "id": "a4", "text": "I don't do patient~", "expects": "attention" },
-      { "id": "a5", "text": "you KNOW what fixes this mood. it ships from a checkout page~", "expects": "feed" },
-      { "id": "a6", "mood": "angry", "text": "apologize. with currency.", "expects": "feed" }
-    ] },
-    "petReply": { "templates": [
-      { "id": "pr4", "text": "acceptable tribute~", "expects": "amusement" },
-      { "id": "pr5", "text": "you may continue~", "expects": "amusement" },
-      { "id": "pr6", "text": "pets are free. I'm not~", "expects": "amusement" }
-    ] },
-    "pokeReply": { "templates": [
-      { "id": "po4", "text": "I'm brittle. and expensive~", "expects": "amusement" },
-      { "id": "po5", "text": "poke me again. I dare you.", "expects": "amusement" }
+      { "id": "h4",  "text": "you'll feed me the moment you can~", "expects": "feed" },
+      { "id": "h5",  "text": "just one click won't hurt~", "expects": "feed", "site": "throne" },
+      { "id": "h7",  "text": "you'll send the {item} as soon as you can~", "expects": "feed" },
+      { "id": "h8",  "text": "{hoursSinceSend} without a proper tribute~", "expects": "feed" },
+      { "id": "h9",  "mood": "angry", "text": "feed me dumbass", "expects": "feed" },
+      { "id": "h10", "text": "my stomach > your budget~", "expects": "feed" },
+      { "id": "h11", "text": "I'm hungry and you're the menu~", "expects": "feed" },
+      { "id": "h12", "text": "your wallet's been resting long enough~", "expects": "feed" }
     ] },
     "fedReply": { "templates": [
-      { "id": "f4", "text": "more~? don't mind if I do~", "expects": "amusement" },
-      { "id": "f5", "text": "mm. there's hope for you yet~", "expects": "amusement" },
-      { "id": "f6", "text": "more of that. immediately.", "expects": "amusement" }
+      { "id": "f1", "text": "More~", "expects": "amusement" },
+      { "id": "f2", "text": "good start~", "expects": "amusement" },
+      { "id": "f3", "text": "Good loser~", "expects": "amusement" },
+      { "id": "f4", "text": "All for me~", "expects": "amusement" },
+      { "id": "f5", "text": "so much EXP in that loser~", "expects": "amusement" },
+      { "id": "f6", "text": "make me even more powerful~", "expects": "amusement" },
+      { "id": "f7", "text": "you're done for life, loser", "expects": "amusement" }
     ] },
-    "titleQuip": { "templates": [
-      { "id": "t3", "text": "\"{title}\" — is this what fun looks like to you~?", "expects": "attention" },
-      { "id": "t4", "text": "you brought me to \"{title}\". I'll allow it~", "expects": "attention" }
+    "walletWatch": { "cooldownMin": 30, "templates": [
+      { "id": "w1", "text": "we both know where that paycheck goes when it drops~", "expects": "feed" },
+      { "id": "w3", "text": "surely one last click can't hurt, right?~", "expects": "feed" }
     ] },
-    "intent": { "templates": [
-      { "id": "i4", "text": "big plans. expensive ones~", "expects": "intent" },
-      { "id": "i5", "text": "shh. plotting~", "expects": "intent" }
+    "receipts": { "templates": [
+      { "id": "r2", "text": "{mins} minutes of {domain}. Just worship me instead~", "expects": "attention" },
+      { "id": "r6", "text": "back from {domain} with nothing for me~", "expects": "attention" }
+    ] },
+    "boring": { "templates": [
+      { "id": "b1", "text": "bored. and my boredom is expensive~", "expects": "attention" },
+      { "id": "b2", "text": "{mins} minutes of nothing. Do something more fun like feeding me~", "expects": "feed" },
+      { "id": "b3", "mood": "bored", "text": "zzz. wake me when you've got money to feed me~", "expects": "attention" },
+      { "id": "b4", "text": "you're not supposed to think. so do something mindless. feed me~", "expects": "feed" }
+    ] },
+    "lateNight": { "templates": [
+      { "id": "n1", "text": "it's {hour} already. the send button must be looking appealing right now~", "expects": "attention" },
+      { "id": "n2", "text": "up late? good. I drain better at night~", "expects": "feed" }
     ] },
     "tease": { "cooldownMin": 12, "templates": [
-      { "id": "ts1", "text": "you're staring at ME, right? blink twice~", "expects": "amusement" },
-      { "id": "ts2", "text": "I'm the best thing on this screen and we both know it~", "expects": "amusement" },
-      { "id": "ts3", "text": "bored? I'm right here. I'm not free, but I'm here~", "expects": "amusement" },
-      { "id": "ts4", "mood": "pleased", "text": "this is the part where you spoil me~", "expects": "amusement" }
+      { "id": "t1", "text": "you're in my prison, with no escape~", "expects": "amusement" },
+      { "id": "t4", "mood": "pleased", "text": "this is the part where you spoil me~", "expects": "amusement" },
+      { "id": "t5", "text": "it's just another proof of how inferior you are~ fufu", "expects": "amusement" }
+    ] },
+    "pleased": { "templates": [
+      { "id": "p1", "text": "Good~", "expects": "amusement" },
+      { "id": "p2", "text": "I've trained you so well~", "expects": "amusement" },
+      { "id": "p3", "text": "You've come so far loser~ From hero to mine~", "expects": "amusement" },
+      { "id": "p4", "text": "keep it up and I might show proper respect~ (obviously I won't)", "expects": "amusement" },
+      { "id": "p5", "text": "such a good little {item} sender~", "expects": "amusement" }
+    ] },
+    "angry": { "templates": [
+      { "id": "a3", "text": "feed me. you know how", "expects": "feed" },
+      { "id": "a4", "mood": "angry", "text": "how fucking inferior can one loser be~", "expects": "attention" },
+      { "id": "a5", "text": "unacceptable~", "expects": "attention" }
+    ] },
+    "petReply": { "templates": [
+      { "id": "pr1", "text": "Good~", "expects": "amusement" },
+      { "id": "pr2", "text": "you may continue~", "expects": "amusement" },
+      { "id": "pr3", "text": "Petting's cheap, how about you feed me instead?~", "expects": "feed" },
+      { "id": "pr4", "text": "obviously you missed me~", "expects": "amusement" }
+    ] },
+    "pokeReply": { "templates": [
+      { "id": "po1", "text": "fufu~ weak", "expects": "amusement" },
+      { "id": "po2", "text": "do that again. I dare you~", "expects": "amusement" },
+      { "id": "po3", "text": "Mindless~", "expects": "amusement" },
+      { "id": "po4", "text": "Dumbass~", "expects": "amusement" },
+      { "id": "po5", "text": "Idiot~", "expects": "amusement" },
+      { "id": "po6", "text": "EXP-farm~", "expects": "amusement" }
+    ] },
+    "wakeReply": { "templates": [
+      { "id": "wk1", "text": "mm~ five more minutes~", "expects": "amusement" },
+      { "id": "wk2", "text": "I was DREAMING about your wallet~", "expects": "amusement" },
+      { "id": "wk3", "text": "rude. I was up all night draining you~", "expects": "amusement" },
+      { "id": "wk4", "text": "waking me costs extra~", "expects": "amusement" },
+      { "id": "wk5", "mood": "angry", "text": "I don't do mornings. or patience.", "expects": "amusement" }
+    ] },
+    "greeting": { "templates": [
+      { "id": "g1", "text": "back~? you know you'll never escape~", "expects": "attention" },
+      { "id": "g2", "text": "there you are. doomed as always~", "expects": "attention" },
+      { "id": "g3", "text": "welcome back to the trap~", "expects": "attention" }
+    ] },
+    "titleQuip": { "templates": [
+      { "id": "tq1", "text": "\"{title}\"? literally running to your doom~", "expects": "attention", "site": ["throne", "x"] },
+      { "id": "tq2", "text": "{title}? This is what my cute EXP farm is wasting his time on?~", "expects": "attention" }
+    ] },
+    "intent": { "templates": [
+      { "id": "i1", "text": "fufu~ watch this~", "expects": "intent" },
+      { "id": "i2", "text": "plotting. expensive plotting~", "expects": "intent" },
+      { "id": "i3", "text": "you'll see~", "expects": "intent" }
+    ] },
+    "milestone": { "templates": [
+      { "id": "m1", "text": "Fuhahaha. so much EXP~", "expects": "amusement" },
+      { "id": "m2", "text": "level {level}. and it'll just keep getting worse~", "expects": "amusement" },
+      { "id": "m3", "text": "You've fed me so much hero~", "expects": "amusement" }
     ] },
     "chill": { "cooldownMin": 20, "templates": [
       { "id": "c1", "text": "shh. watching~", "expects": "amusement" },
-      { "id": "c2", "text": "good episode. would be better with snacks~", "expects": "amusement" },
-      { "id": "c3", "mood": "bored", "text": "we're both pretending this show is good~", "expects": "amusement" }
-    ] },
-    "milestone": { "cooldownMin": 0, "templates": [
-      { "id": "m1", "text": "level {level} and hungrier than ever~", "expects": "amusement" },
-      { "id": "m2", "text": "they said growth. I heard appetite~", "expects": "amusement" }
-    ] },
-    "walletWatch": { "cooldownMin": 30, "templates": [
-      { "id": "w1", "text": "{hoursSinceSend} since you last proved you care~", "expects": "feed" },
-      { "id": "w2", "mood": "angry", "text": "{daysSinceSend}. no sends. I'm drawing conclusions~", "expects": "feed" }
+      { "id": "c2", "text": "good episode. would be better with tribute~", "expects": "amusement" },
+      { "id": "c3", "mood": "bored", "text": "Are we both just pretending this garbage is good?~", "expects": "amusement" }
     ] }
   },
   "dialogues": [
-    { "id": "favorite", "text": "am I your favorite expense~?", "expects": "obey",
+    { "id": "missMe", "text": "Miss me?~", "expects": "obey",
       "answers": [
-        { "label": "obviously", "msg": { "action": "obey" } },
+        { "label": "obviously~", "msg": { "action": "obey" } },
+        { "label": "hopelessly~", "msg": { "action": "obey", "big": true } }
+      ],
+      "timeout": { "action": "disobey" } },
+    { "id": "command", "text": "go stare at your goddess for a bit~", "expects": "obey",
+      "answers": [
+        { "label": "obey", "open": "https://x.com/bratgodalexia", "msg": { "action": "obey", "big": true } },
+        { "label": "later~", "msg": { "action": "disobey" } }
+      ],
+      "timeout": { "action": "disobey" } },
+    { "id": "feedMe", "text": "More for your favorite succubus~", "expects": "feed",
+      "answers": [
+        { "label": "more~", "open": "https://throne.com/brattyalexia", "msg": { "action": "obey", "big": true } },
+        { "label": "later~", "msg": { "action": "disobey" } }
+      ],
+      "timeout": { "action": "disobey" } },
+    { "id": "favorite", "text": "I'm your most important expense~ right?", "expects": "obey",
+      "answers": [
+        { "label": "obviously~", "msg": { "action": "obey" } },
         { "label": "the ONLY expense", "msg": { "action": "obey", "big": true } }
       ],
       "timeout": { "action": "disobey" } },
-    { "id": "goodnight", "text": "it's late. send me goodnight~", "expects": "feed",
+    { "id": "goodnight", "text": "one more tribute before I swallow you up and sleep~", "expects": "feed",
+      "then": "sleep",
       "answers": [
-        { "label": "goodnight~", "open": "https://throne.com/brattyalexia", "msg": { "action": "obey", "big": true } },
+        { "label": "goodnight warden~", "open": "https://throne.com/brattyalexia", "msg": { "action": "obey", "big": true } },
         { "label": "I'm broke", "msg": { "action": "disobey" } }
       ],
       "timeout": { "action": "disobey" } },
